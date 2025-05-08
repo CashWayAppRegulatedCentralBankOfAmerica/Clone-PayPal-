@@ -1,115 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PayPal Dashboard Clone</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body {
-      font-family: 'Helvetica', sans-serif;
-      background-color: #f2f4fb;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PayPal Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Helvetica', sans-serif;
+      background-color: #f2f4fb;
+    }
+  </style>
 </head>
-<body class="pb-28 max-w-md mx-auto">
+<body class="max-w-sm mx-auto pb-24">
 
-  <!-- Top Profile -->
-  <div class="mt-4 px-4 flex items-center">
-    <img src="your-profile.jpg" alt="Profile" class="h-10 w-10 rounded-full" />
-  </div>
+  <!-- Profile -->
+  <div class="px-4 pt-4">
+    <img src="your-profile.jpg" alt="Profile" class="h-10 w-10 rounded-full" />
+  </div>
 
-  <!-- Balance Box -->
-  <div class="bg-white rounded-2xl p-4 mt-4 mx-4 flex items-center shadow-md space-x-4">
-    <div class="bg-[#0070ba] rounded-full p-2">
-      <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" class="h-6 w-6" />
-    </div>
-    <div>
-      <p class="text-[22px] font-bold">US$0.13</p>
-      <p class="text-gray-500 text-sm">PayPal balance</p>
-    </div>
-  </div>
+  <!-- Balance -->
+  <div class="mt-4 mx-4 bg-white rounded-2xl p-4 shadow">
+    <div class="flex items-center space-x-4">
+      <div class="bg-[#003087] rounded-full p-2">
+        <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" class="h-5 w-5" />
+      </div>
+      <div>
+        <p class="text-[22px] font-bold">US$0.13</p>
+        <p class="text-sm text-gray-500">PayPal balance</p>
+      </div>
+    </div>
+  </div>
 
-  <!-- Send Payments -->
-  <div class="mt-6 mx-4">
-    <h2 class="text-lg font-bold mb-2">Send Payments</h2>
-    <div class="bg-white rounded-2xl p-4 flex items-start space-x-3">
-      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828490.png" alt="Pay Icon" class="h-8 w-8">
-      <div>
-        <p class="font-semibold">Pay From Your Phone</p>
-        <p class="text-sm text-gray-600">For the things you love.</p>
-        <a href="#" class="text-blue-600 text-sm font-medium">Send now</a>
-      </div>
-    </div>
-  </div>
+  <!-- Send Payments -->
+  <div class="mt-6 px-4">
+    <h2 class="text-base font-bold mb-2">Send Payments</h2>
+    <div class="bg-white rounded-2xl p-4 flex space-x-3">
+      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828490.png" class="h-8 w-8">
+      <div>
+        <p class="font-semibold text-sm">Pay From Your Phone</p>
+        <p class="text-sm text-gray-600">For the things you love.</p>
+        <a href="#" class="text-blue-600 text-sm font-medium">Send now</a>
+      </div>
+    </div>
+  </div>
 
-  <!-- Transactions -->
-  <div class="mt-6 space-y-2 px-4">
-    <!-- Transaction Card -->
-    <div class="bg-white rounded-xl p-4 flex justify-between items-center">
-      <div class="flex items-center space-x-3">
-        <img src="images.png" class="h-9 w-9 rounded-full">
-        <div>
-          <p class="font-bold">PrankTexts.com</p>
-          <p class="text-sm text-gray-500">27 Apr</p>
-        </div>
-      </div>
-      <div class="text-right">
-        <p class="font-bold">-US$1</p>
-        <p class="text-sm text-gray-500">Payment</p>
-      </div>
-    </div>
+  <!-- Transactions -->
+  <div class="mt-6 space-y-2 px-4">
+    <!-- One Transaction -->
+    <div class="bg-white rounded-xl p-4 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <img src="images.png" class="h-9 w-9 rounded-full" />
+        <div>
+          <p class="font-semibold text-sm">PrankTexts.com</p>
+          <p class="text-xs text-gray-500">27 Apr</p>
+        </div>
+      </div>
+      <div class="text-right">
+        <p class="font-bold text-sm">-US$1</p>
+        <p class="text-xs text-gray-500">Payment</p>
+      </div>
+    </div>
 
-    <div class="bg-white rounded-xl p-4 flex justify-between items-center">
-      <div class="flex items-center space-x-3">
-        <img src="images.png" class="h-9 w-9 rounded-full">
-        <div>
-          <p class="font-bold">THUNES</p>
-          <p class="text-sm text-gray-500">27 Apr</p>
-        </div>
-      </div>
-      <div class="text-right">
-        <p class="text-green-600 font-bold">+US$1.13</p>
-        <p class="text-sm text-gray-500">Payment received</p>
-      </div>
-    </div>
+    <div class="bg-white rounded-xl p-4 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <img src="images.png" class="h-9 w-9 rounded-full" />
+        <div>
+          <p class="font-semibold text-sm">THUNES</p>
+          <p class="text-xs text-gray-500">27 Apr</p>
+        </div>
+      </div>
+      <div class="text-right">
+        <p class="font-bold text-sm text-green-600">+US$1.13</p>
+        <p class="text-xs text-gray-500">Payment received</p>
+      </div>
+    </div>
 
-    <div class="bg-white rounded-xl p-4 flex justify-between items-center">
-      <div class="flex items-center space-x-3">
-        <img src="images.png" class="h-9 w-9 rounded-full">
-        <div>
-          <p class="font-bold">THUNES</p>
-          <p class="text-sm text-gray-500">18 Apr</p>
-        </div>
-      </div>
-      <div class="text-right">
-        <p class="font-bold">-US$1.49</p>
-        <p class="text-sm text-gray-500">Payment</p>
-      </div>
-    </div>
-  </div>
+    <div class="bg-white rounded-xl p-4 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <img src="images.png" class="h-9 w-9 rounded-full" />
+        <div>
+          <p class="font-semibold text-sm">THUNES</p>
+          <p class="text-xs text-gray-500">18 Apr</p>
+        </div>
+      </div>
+      <div class="text-right">
+        <p class="font-bold text-sm">-US$1.49</p>
+        <p class="text-xs text-gray-500">Payment</p>
+      </div>
+    </div>
+  </div>
 
-  <!-- Send & Request Buttons -->
-  <div class="mt-6 px-4 flex justify-between">
-    <button class="bg-black text-white font-bold py-3 rounded-full w-[48%]">Send</button>
-    <button class="bg-black text-white font-bold py-3 rounded-full w-[48%]">Request</button>
-  </div>
+  <!-- Send/Request -->
+  <div class="mt-6 px-4 flex justify-between">
+    <button class="w-[48%] bg-black text-white text-sm font-bold py-3 rounded-full">Send</button>
+    <button class="w-[48%] bg-black text-white text-sm font-bold py-3 rounded-full">Request</button>
+  </div>
 
-  <!-- Bottom Navigation -->
-  <nav class="fixed bottom-0 w-full max-w-md mx-auto bg-white border-t px-6 py-1.5 flex justify-evenly items-center">
-    <a href="#" class="flex flex-col items-center text-gray-700">
-      <img src="https://cdn-icons-png.flaticon.com/512/1946/1946433.png" class="h-5 w-5" />
-      <span class="text-[11px] mt-0.5">Home</span>
-    </a>
-    <a href="#" class="flex flex-col items-center text-gray-700">
-      <img src="https://cdn-icons-png.flaticon.com/512/591/591574.png" class="h-5 w-5" />
-      <span class="text-[11px] mt-0.5">Payments</span>
-    </a>
-    <a href="#" class="flex flex-col items-center text-gray-700">
-      <img src="https://cdn-icons-png.flaticon.com/512/254/254638.png" class="h-5 w-5" />
-      <span class="text-[11px] mt-0.5">Wallet</span>
-    </a>
-  </nav>
+  <!-- Bottom Nav -->
+  <nav class="fixed bottom-0 left-0 w-full max-w-sm mx-auto bg-white border-t px-4 py-2 flex justify-around items-center">
+    <a href="#" class="flex flex-col items-center text-gray-700">
+      <img src="https://cdn-icons-png.flaticon.com/512/1946/1946433.png" class="h-[18px] w-[18px]" />
+      <span class="text-[11px] mt-1">Home</span>
+    </a>
+    <a href="#" class="flex flex-col items-center text-gray-700">
+      <img src="https://cdn-icons-png.flaticon.com/512/591/591574.png" class="h-[18px] w-[18px]" />
+      <span class="text-[11px] mt-1">Payments</span>
+    </a>
+    <a href="#" class="flex flex-col items-center text-gray-700">
+      <img src="https://cdn-icons-png.flaticon.com/512/254/254638.png" class="h-[18px] w-[18px]" />
+      <span class="text-[11px] mt-1">Wallet</span>
+    </a>
+  </nav>
 
 </body>
 </html>
